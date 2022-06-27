@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+ crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+ crossorigin="anonymous"></script>
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Vujahday+Script&display=swap" 
+ rel="stylesheet">
+ <!-- ends here -->
+ <script src="cart.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="title mt-5 text-center shadow col-xs-2">
+                <h1 style="font-family: 'Indie Flower', cursive; font-size: 50px;">CART PAGE</h1>
+    
+            </div>
+            <div class="tablePart mt-5">
+                <div class="d-flex justify-content-between row ">
+                    <a href="menu.html" class="btn btn-info mb-4 text-light" style="width: 130px; height: 50px;">DIB ULAABO</a>
+                   <input type="text" class="form-control fullName" placeholder="enter your full name" style="width: 300px; height: 40px; border: 3px solid blue;">
+                </div>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <th>IMAGE</th>
+                        <th>NAME</th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                        
+                    </thead>
+                    <tbody class="tableBody">
+                        
+                    </tbody >
+                </table> 
+                    <div class="total  d-flex justify-content-end" >
+                        <span style="font-size: 25px;">TOTAL:</span><span class="totalMoney" style="font-size: 27px; color: blue;" >$0</span>
+                    </div>
+            </div>
+            <div class="d-flex mt-5 justify-content-between">
+                <div class="checkout_btn">
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal">
+                        BIXI LACAGTA
+                      </button>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">BUUXI XOGTADA</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              <form action="">
+                                  <div>
+                                      <label for="name">Full Name</label>
+                                      <input required type="text" class="form-control magacooBuuxa">
+                                  </div>
+                                  <div>
+                                      <label for="phoneNumber">PHONE NUMBER</label>
+                                      <input required placeholder="tusaale :610941595" type="text" class="form-control phoneNumber" name=" phoneNumber">
+                                  </div> 
+                                  <div>
+                                      <label for="BATCH">BATCH</label>
+                                      <input type="text" class="form-control BATCH" required>
+                                  </div>
+                                  <a href="#" class="btn btn-primary mt-3  btnCheckOut">BIXI BIILKA</a>
+                                  <a href="#" class="phoneApp btn btn-success">phone</a>
+                                  <div class="alertContainer mt-3"></div>
+                                 
+                              </form>
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="sendOrder">
+                    <button class="btn btn-success sendOrder">SEND ORDER</button>
+                    <div class="alertPart"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+</body>
+</html>
